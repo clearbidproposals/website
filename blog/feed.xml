@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Clearbid Proposal Services blog</title>
+  <link>https://www.clearbidproposals.com/blog/</link>
+  <atom:link href="https://www.clearbidproposals.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Practical guides for small contractors on bids, proposals and government contracting.</description>
+  <language>en-us</language>
+  <lastBuildDate>Wed, 14 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>How to Find and Bid on Government Contracts in Mississippi</title>
+    <link>https://www.clearbidproposals.com/blog/find-government-contracts-mississippi/</link>
+    <guid isPermaLink="true">https://www.clearbidproposals.com/blog/find-government-contracts-mississippi/</guid>
+    <pubDate>Wed, 14 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Where federal, state and local bids in Mississippi are posted, how to register for each, and the dollar thresholds that decide whether a job is advertised at all.</description>
+  </item>
+</channel>
+</rss>
