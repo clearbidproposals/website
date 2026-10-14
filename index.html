@@ -5,42 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clearbid Proposal Services | Bid and proposal writing for small contractors</title>
 <meta name="description" content="Bid proposals, capability statements and bid reviews for small contractors. Fixed prices, compliance-checked drafts, five-day turnaround. Petal, Mississippi.">
+<link rel="canonical" href="https://www.clearbidproposals.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clearbid Proposal Services">
+<meta property="og:url" content="https://www.clearbidproposals.com/">
+<meta property="og:title" content="Clearbid Proposal Services | Bid proposals for small contractors">
+<meta property="og:description" content="Complete, compliance-checked bid proposals and capability statements at fixed prices. Five-day turnaround.">
+<meta property="og:image" content="https://www.clearbidproposals.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f5c4f'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* Layout: single column document, like a well-made bid response — cover, sections, compliance table, pricing schedule */
 :root{
   --bg:#f6f7f5; --paper:#ffffff; --ink:#18211f; --muted:#56625f; --rule:#d9dfdc;
-  --accent:#1f5c4f; --accent-soft:#e3eeea; --met:#2e7d4f;
+  --accent:#1f5c4f; --accent-ink:#ffffff; --accent-soft:#e3eeea; --met:#2e7d4f;
   --display:"Source Serif 4", Georgia, "Times New Roman", serif;
   --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#111715; --paper:#172020; --ink:#e7eeeb; --muted:#9fb0ab; --rule:#2c3a37;
-  --accent:#7cc4b0; --accent-soft:#1d332e; --met:#7fd1a0; color-scheme:dark}}
+  --accent:#7cc4b0; --accent-ink:#0f1a17; --accent-soft:#1d332e; --met:#7fd1a0; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#111715; --paper:#172020; --ink:#e7eeeb; --muted:#9fb0ab; --rule:#2c3a37;
-  --accent:#7cc4b0; --accent-soft:#1d332e; --met:#7fd1a0; color-scheme:dark}
+  --accent:#7cc4b0; --accent-ink:#0f1a17; --accent-soft:#1d332e; --met:#7fd1a0; color-scheme:dark}
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;margin:0}
-.wrap{max-width:860px;margin:0 auto;padding-inline:20px;padding-block:32px 56px}
-header.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:12px}
-.brand{font-family:var(--display);font-weight:650;font-size:1.35rem;letter-spacing:.01em}
+a{color:var(--accent)}
+.wrap{max-width:880px;margin:0 auto;padding-inline:20px;padding-block:28px 56px}
+header.top{display:flex;justify-content:space-between;align-items:baseline;gap:10px 20px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.brand{font-family:var(--display);font-weight:650;font-size:1.35rem;letter-spacing:.01em;color:var(--ink);text-decoration:none}
 .brand span{color:var(--accent)}
-.ref{font-family:var(--mono);font-size:.78rem;color:var(--muted);letter-spacing:.04em}
-.hero{padding-block:40px 28px}
-h1{font-family:var(--display);font-weight:650;font-size:clamp(1.9rem,4.5vw,2.7rem);line-height:1.15;margin:0 0 14px;text-wrap:balance;max-width:22ch}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{font-size:.9rem;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink);text-decoration:underline}
+.hero{padding-block:40px 30px}
+.kicker{font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+h1{font-family:var(--display);font-weight:650;font-size:clamp(1.9rem,4.5vw,2.75rem);line-height:1.15;margin:0 0 14px;text-wrap:balance;max-width:22ch}
 .lede{color:var(--muted);font-size:1.08rem;max-width:62ch;margin:0 0 22px}
 .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.btn{display:inline-block;background:var(--accent);color:var(--paper);text-decoration:none;font-weight:600;padding:11px 18px;border-radius:4px}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:11px 18px;border-radius:4px;border:1px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .note{font-size:.9rem;color:var(--muted)}
-section{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:26px 24px;margin-top:20px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;padding-top:16px;border-top:1px solid var(--rule);font-size:.9rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+section{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:26px 24px;margin-top:20px;scroll-margin-top:16px}
 .sec-label{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 4px}
 h2{font-family:var(--display);font-weight:650;font-size:1.45rem;margin:0 0 14px;text-wrap:balance}
+h3{font-size:1rem;margin:0 0 4px}
 p{margin:0 0 12px;max-width:68ch}
 .tbl{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:.95rem;font-variant-numeric:tabular-nums}
@@ -48,39 +67,103 @@ th,td{text-align:left;padding:10px 10px;border-bottom:1px solid var(--rule);vert
 th{font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 td.price{font-weight:600;white-space:nowrap}
 .met{font-family:var(--mono);font-size:.78rem;color:var(--met);font-weight:500;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:18px}
+.grid p{font-size:.95rem;color:var(--muted);margin:0}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px 28px}
+.order{margin-top:20px;padding-top:18px;border-top:1px solid var(--rule)}
+.order h3{margin-bottom:10px}
+.order-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:12px}
+.order-card{border:1px solid var(--rule);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.order-card .what{font-weight:600}
+.order-card .price{font-family:var(--display);font-size:1.35rem;font-weight:650}
+.order-card .small{font-size:.86rem;color:var(--muted);margin:0 0 6px}
+.order-card .btn{margin-top:auto;text-align:center}
 ol.steps{margin:0;padding-left:1.3em;display:grid;gap:10px}
 ol.steps li{padding-left:4px;max-width:66ch}
 ol.steps b{font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.grid h3{font-size:1rem;margin:0 0 4px}
-.grid p{font-size:.95rem;color:var(--muted);margin:0}
+.samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:14px;margin:6px 0 20px}
+.sample{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--rule);border-radius:6px;padding:14px 16px;text-decoration:none;color:var(--ink);background:var(--bg)}
+.sample:hover{border-color:var(--accent)}
+.sample .doc{flex:none;width:40px;height:50px;border:1.5px solid var(--accent);border-radius:3px;position:relative;background:var(--paper)}
+.sample .doc::after{content:"PDF";position:absolute;bottom:5px;left:0;right:0;text-align:center;font-family:var(--mono);font-size:.62rem;color:var(--accent)}
+.sample .doc::before{content:"";position:absolute;top:8px;left:7px;right:7px;height:14px;background:repeating-linear-gradient(var(--rule) 0 2px,transparent 2px 5px)}
+.sample .t{display:block;font-weight:600;color:var(--ink);margin-bottom:2px}
+.sample .d{display:block;font-size:.88rem;color:var(--muted)}
+details{border-bottom:1px solid var(--rule)}
+details:first-of-type{border-top:1px solid var(--rule)}
+summary{cursor:pointer;padding:14px 28px 14px 0;font-weight:600;list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;font-family:var(--mono);font-size:1.1rem;color:var(--accent)}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:-4px 0 14px}
 .contact dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}
 .contact dt{font-family:var(--mono);font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
 .contact dd{margin:0;word-break:break-word}
+#em{color:inherit}
 .copy{font:inherit;font-size:.82rem;margin-left:8px;background:var(--accent-soft);color:var(--accent);border:1px solid var(--rule);border-radius:4px;padding:2px 8px;cursor:pointer}
 footer{margin-top:28px;font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media (max-width:520px){section{padding:20px 16px}.contact dl{grid-template-columns:1fr}.contact dt{padding-top:8px}}
+footer a{color:var(--muted)}
+@media (max-width:600px){
+  section{padding:20px 16px}
+  .contact dl{grid-template-columns:1fr}.contact dt{padding-top:8px}
+  #services table thead{display:none}
+  #services table tr{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-bottom:1px solid var(--rule)}
+  #services table td{border:0;padding:0}
+  #services table td:nth-child(1){font-weight:600;grid-column:1}
+  #services table td:nth-child(4){grid-column:2;grid-row:1;text-align:right}
+  #services table td:nth-child(2){grid-column:1 / -1;color:var(--muted);font-size:.92rem}
+  #services table td:nth-child(3){grid-column:1 / -1;font-size:.85rem;color:var(--muted)}
+  #services table td:nth-child(3)::before{content:"Turnaround: "}
+  #samples table thead{display:none}
+  #samples table tr{display:grid;grid-template-columns:2.6em 1fr auto;gap:2px 10px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  #samples table td{border:0;padding:0}
+  #samples table td:nth-child(1){grid-column:1;grid-row:1;color:var(--muted)}
+  #samples table td:nth-child(2){grid-column:2;grid-row:1}
+  #samples table td:nth-child(4){grid-column:3;grid-row:1}
+  #samples table td:nth-child(3){grid-column:2 / -1;grid-row:2;font-size:.85rem;color:var(--muted)}
+  #samples table td:nth-child(3)::before{content:"Answered in: "}
+}
 </style>
-<style>#em{color:inherit}</style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="brand">Clear<span>bid</span> Proposal Services</div>
-    <div class="ref">PETAL, MISSISSIPPI</div>
+    <a class="brand" href="/">Clear<span>bid</span> Proposal Services</a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#samples">Samples</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <div class="hero">
+    <p class="kicker">Petal, Mississippi · Serving small contractors by email</p>
     <h1>Bid proposals and capability statements for small contractors.</h1>
-    <p class="lede">Send the solicitation and your company details. You get back a complete, compliance-checked draft in five business days, at a fixed price agreed before work starts.</p>
+    <p class="lede">Send the solicitation and your company details. You get back a complete, compliance-checked draft at a fixed price agreed before work starts. Standard proposals take five business days.</p>
     <div class="cta">
-      <a class="btn" href="#contact">Request a proposal</a>
-      <span class="note">Fixed prices · two revision rounds included · you own everything delivered</span>
+      <a class="btn" href="mailto:kaleb@clearbidproposals.com?subject=Proposal%20request">Email us your solicitation</a>
+      <a class="btn ghost" href="#samples">See sample work</a>
+    </div>
+    <div class="facts">
+      <span><b>Fixed prices</b> agreed up front</span>
+      <span><b>Two revision rounds</b> included</span>
+      <span><b>You own</b> everything delivered</span>
     </div>
   </div>
 
-  <section id="services">
+  <section id="who">
     <p class="sec-label">Section 1</p>
+    <h2>Who we help</h2>
+    <div class="grid">
+      <div><h3>Small contractors bidding public work</h3><p>Construction, janitorial, landscaping, IT, security and professional services firms responding to federal, state, county and city solicitations.</p></div>
+      <div><h3>Certified small businesses</h3><p>Firms with 8(a), HUBZone, WOSB/EDWOSB or VOSB/SDVOSB status that want their capability statement and SBA profile to match the set-asides they qualify for.</p></div>
+      <div><h3>Teams without a proposal writer</h3><p>Owners who do the work well but don't have the hours to turn a 40-page bid packet into a complete, compliant response before the deadline.</p></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <p class="sec-label">Section 2</p>
     <h2>Services and pricing</h2>
     <div class="tbl">
       <table>
@@ -94,10 +177,33 @@ footer{margin-top:28px;font-size:.85rem;color:var(--muted);display:flex;justify-
         </tbody>
       </table>
     </div>
+    <p class="note" style="margin-top:10px">Turnaround is in business days, counted from when we have the solicitation and your intake answers.</p>
+
+    <div class="order">
+      <h3>Order online</h3>
+      <div class="order-grid">
+        <div class="order-card">
+          <span class="what">Capability statement</span><span class="price">$300</span>
+          <p class="small">Pay securely; your intake questionnaire arrives within one business day.</p>
+          <a class="btn" href="https://buy.stripe.com/8x26oG2UCaQU0Xj7Ll7ok00">Order now</a>
+        </div>
+        <div class="order-card">
+          <span class="what">Bid review</span><span class="price">$250</span>
+          <p class="small">After payment, reply with your draft and the solicitation.</p>
+          <a class="btn" href="https://buy.stripe.com/eVq7sK66Oe36eO93v57ok01">Order now</a>
+        </div>
+        <div class="order-card">
+          <span class="what">Monthly bid support</span><span class="price">$1,250/mo</span>
+          <p class="small">Billed monthly. Cancel anytime, effective at the end of the paid month.</p>
+          <a class="btn" href="https://buy.stripe.com/6oU5kC52K9MQ0Xjc1B7ok02">Start now</a>
+        </div>
+      </div>
+      <p class="note" style="margin-top:12px">Proposals are quoted first: <a href="mailto:kaleb@clearbidproposals.com?subject=Proposal%20quote">email the solicitation and your deadline</a> and you'll receive a fixed price within one business day.</p>
+    </div>
   </section>
 
   <section id="process">
-    <p class="sec-label">Section 2</p>
+    <p class="sec-label">Section 3</p>
     <h2>How it works</h2>
     <ol class="steps">
       <li><b>Send the solicitation.</b> Email the RFP, bid packet, or opportunity link with your deadline.</li>
@@ -108,37 +214,70 @@ footer{margin-top:28px;font-size:.85rem;color:var(--muted);display:flex;justify-
     </ol>
   </section>
 
-  <section id="compliance">
-    <p class="sec-label">Section 3</p>
-    <h2>Every requirement, accounted for</h2>
-    <p>Each proposal starts with a requirements matrix that maps every instruction in the solicitation to the page that answers it. Here is an excerpt from a sample.</p>
+  <section id="samples">
+    <p class="sec-label">Section 4</p>
+    <h2>Sample work</h2>
+    <p>Both samples were written for a fictional company and a fictional solicitation, so you can see the format and level of detail before you order.</p>
+    <div class="samples">
+      <a class="sample" href="samples/sample-capability-statement.pdf" target="_blank" rel="noopener">
+        <span class="doc" aria-hidden="true"></span>
+        <span><span class="t">Sample capability statement</span><span class="d">One page · janitorial contractor · PDF</span></span>
+      </a>
+      <a class="sample" href="samples/sample-proposal-excerpt.pdf" target="_blank" rel="noopener">
+        <span class="doc" aria-hidden="true"></span>
+        <span><span class="t">Sample proposal excerpt</span><span class="d">4 pages · city janitorial RFP · PDF</span></span>
+      </a>
+    </div>
+    <h3>Every requirement, accounted for</h3>
+    <p>Each proposal starts with a requirements matrix that maps every instruction in the solicitation to the section that answers it. An excerpt from the sample:</p>
     <div class="tbl">
       <table>
         <thead><tr><th>RFP section</th><th>Requirement</th><th>Where addressed</th><th>Status</th></tr></thead>
         <tbody>
-          <tr><td>3.1</td><td>Nightly service, Mon–Fri, 6–11 pm</td><td>Technical approach, ¶1</td><td class="met">MET</td></tr>
+          <tr><td>3.1</td><td>Nightly service, Mon–Fri, 6–11&nbsp;pm</td><td>Technical approach</td><td class="met">MET</td></tr>
           <tr><td>3.2</td><td>Background checks for all staff</td><td>Staffing plan</td><td class="met">MET</td></tr>
           <tr><td>3.6</td><td>Monthly quality inspection reports</td><td>Quality control plan</td><td class="met">MET</td></tr>
           <tr><td>4.2</td><td>$1M general liability insurance</td><td>Attachment B</td><td class="met">MET</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="note" style="margin-top:10px">Sample prepared for a fictional company and solicitation.</p>
   </section>
 
   <section id="policies">
-    <p class="sec-label">Section 4</p>
+    <p class="sec-label">Section 5</p>
     <h2>Payment and policies</h2>
-    <div class="grid">
+    <div class="grid two">
       <div><h3>Payment</h3><p>Pay online by card or bank transfer through Stripe. Services under $500 are paid upfront. Proposals of $500 or more take a 50% deposit to start, with the balance due within 7 days of delivery. Monthly support is charged automatically each month; cancel anytime, effective at the end of the paid month.</p></div>
       <div><h3>Refunds</h3><p>Cancel before work begins for a full refund. After drafting starts, the deposit covers work completed. If a draft misses the agreed scope, we revise it or refund the balance.</p></div>
       <div><h3>What's not included</h3><p>Pricing figures (you set your price), legal review, and submission on your behalf. No one can guarantee a contract award.</p></div>
       <div><h3>Confidentiality</h3><p>Your documents and pricing are used only to prepare your proposal and are never shared with other clients.</p></div>
     </div>
+    <p class="note" style="margin-top:16px">Full details: <a href="terms.html">Terms of service</a> · <a href="privacy.html">Privacy policy</a></p>
+  </section>
+
+  <section id="faq">
+    <p class="sec-label">Section 6</p>
+    <h2>Frequently asked questions</h2>
+    <details><summary>Do you submit the bid for me?</summary><p>No. You review the final version and submit it through the buyer's portal, email or mail. That keeps your signature, certifications and pricing in your hands.</p></details>
+    <details><summary>Do you set our pricing?</summary><p>No. You supply the price or rate sheet, and we write the proposal around it. We never change your numbers.</p></details>
+    <details><summary>What do you need from us to start?</summary><p>The full solicitation and any amendments, your deadline, and answers to a short intake questionnaire about your company, key people and past work. Your UEI, CAGE code and certifications help if you have them.</p></details>
+    <details><summary>How fast can you turn it around?</summary><p>Bid reviews in 2 business days, capability statements in 3, standard proposals in 5, counted from when we have the solicitation and your intake answers. If your deadline is tight, email us before you pay and we'll tell you honestly whether we can meet it.</p></details>
+    <details><summary>Do you use AI?</summary><p>Yes. We use an AI-assisted research and drafting process, which is how we keep turnaround fast and prices fixed. Every document is built only from the information you give us and public records about your company, and checked against each requirement in the solicitation before delivery.</p></details>
+    <details><summary>Is my information kept confidential?</summary><p>Yes. Your documents and pricing are used only to prepare your work and are never shared with or reused for other clients. See the <a href="privacy.html">privacy policy</a> for details.</p></details>
+    <details><summary>What if I need changes?</summary><p>Two rounds of revisions are included with every service. Reply to the delivery email with your changes and you'll get an updated version, usually within one to two business days.</p></details>
+    <details><summary>Can you guarantee we'll win?</summary><p>No one honestly can. We make sure your proposal is complete, compliant and clear, which removes the most common reasons bids are scored down or rejected.</p></details>
+    <details><summary>How do I pay?</summary><p>By card or bank transfer through Stripe. Capability statements, bid reviews and monthly support can be ordered with the buttons above; proposals are invoiced after you approve the quote.</p></details>
+  </section>
+
+  <section id="about">
+    <p class="sec-label">Section 7</p>
+    <h2>About Clearbid</h2>
+    <p>Clearbid Proposal Services is owned by Kaleb Hill and based in Petal, Mississippi. It exists to give small contractors the kind of proposal support larger firms keep on staff: complete, compliant responses at a fixed price, delivered by email on a predictable schedule.</p>
+    <p>We work entirely by email, so we can help contractors anywhere in the United States, and you always have a written record of what was agreed.</p>
   </section>
 
   <section id="contact" class="contact">
-    <p class="sec-label">Section 5</p>
+    <p class="sec-label">Section 8</p>
     <h2>Contact</h2>
     <dl>
       <dt>Owner</dt><dd>Kaleb Hill</dd>
@@ -150,7 +289,7 @@ footer{margin-top:28px;font-size:.85rem;color:var(--muted);display:flex;justify-
 
   <footer>
     <span>© 2026 Clearbid Proposal Services · Petal, Mississippi</span>
-    <span>Bid and proposal writing for small businesses</span>
+    <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
   </footer>
 </div>
 <script>
