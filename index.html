@@ -17,7 +17,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="Clearbid blog" href="https://www.clearbidproposals.com/blog/feed.xml">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Clearbid Proposal Services", "url": "https://www.clearbidproposals.com/", "description": "Bid proposals, capability statements and bid reviews for small contractors, at fixed prices.", "email": "kaleb@clearbidproposals.com", "image": "https://www.clearbidproposals.com/og-image.png", "founder": {"@type": "Person", "name": "Kaleb Hill"}, "address": {"@type": "PostalAddress", "postOfficeBoxNumber": "60", "addressLocality": "Petal", "addressRegion": "MS", "postalCode": "39465", "addressCountry": "US"}, "areaServed": {"@type": "Country", "name": "United States"}, "openingHours": "Mo-Fr 08:00-17:00", "priceRange": "$250-$1,250", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "price": "250", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Bid review"}}, {"@type": "Offer", "price": "300", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Capability statement"}}, {"@type": "Offer", "price": "750", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Standard proposal"}}, {"@type": "Offer", "price": "1250", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Monthly bid support"}}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Clearbid Proposal Services", "url": "https://www.clearbidproposals.com/", "description": "Bid proposals, capability statements and bid reviews for small contractors, at fixed prices.", "email": "kaleb@clearbidproposals.com", "image": "https://www.clearbidproposals.com/og-image.png", "founder": {"@type": "Person", "name": "Kaleb Hill", "image": "https://www.clearbidproposals.com/assets/kaleb-hill.jpg"}, "address": {"@type": "PostalAddress", "postOfficeBoxNumber": "60", "addressLocality": "Petal", "addressRegion": "MS", "postalCode": "39465", "addressCountry": "US"}, "areaServed": {"@type": "Country", "name": "United States"}, "openingHours": "Mo-Fr 08:00-17:00", "priceRange": "$250-$1,250", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "price": "250", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Bid review"}}, {"@type": "Offer", "price": "300", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Capability statement"}}, {"@type": "Offer", "price": "750", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Standard proposal"}}, {"@type": "Offer", "price": "1250", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Monthly bid support"}}]}}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f5c4f'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,6 +103,10 @@ details p{color:var(--muted);margin:-4px 0 14px}
 .contact dt{font-family:var(--mono);font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
 .contact dd{margin:0;word-break:break-word}
 #em{color:inherit}
+.about{display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:start}
+.about figure{margin:0}
+.about img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--rule)}
+.about figcaption{font-size:.82rem;color:var(--muted);margin-top:6px}
 .reqform-wrap{margin-top:24px;padding-top:20px;border-top:1px solid var(--rule);scroll-margin-top:16px}
 .reqform-wrap h3{font-size:1.1rem;margin:0 0 4px}
 .reqform{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin-top:14px}
@@ -124,6 +128,7 @@ footer a{color:var(--muted)}
   section{padding:20px 16px}
   .contact dl{grid-template-columns:1fr}.contact dt{padding-top:8px}
   .reqform{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr;gap:16px}.about figure{max-width:220px}
   #services table thead{display:none}
   #services table tr{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-bottom:1px solid var(--rule)}
   #services table td{border:0;padding:0}
@@ -291,8 +296,16 @@ footer a{color:var(--muted)}
   <section id="about">
     <p class="sec-label">Section 7</p>
     <h2>About Clearbid</h2>
-    <p>Clearbid Proposal Services is owned by Kaleb Hill and based in Petal, Mississippi. It exists to give small contractors the kind of proposal support larger firms keep on staff: complete, compliant responses at a fixed price, delivered by email on a predictable schedule.</p>
-    <p>We work entirely by email, so we can help contractors anywhere in the United States, and you always have a written record of what was agreed.</p>
+    <div class="about">
+      <figure>
+        <img src="assets/kaleb-hill.jpg" width="640" height="800" alt="Kaleb Hill, owner of Clearbid Proposal Services" loading="lazy">
+        <figcaption>Kaleb Hill, owner</figcaption>
+      </figure>
+      <div>
+        <p>Clearbid Proposal Services is owned by Kaleb Hill and based in Petal, Mississippi. It exists to give small contractors the kind of proposal support larger firms keep on staff: complete, compliant responses at a fixed price, delivered by email on a predictable schedule.</p>
+        <p>We work entirely by email, so we can help contractors anywhere in the United States, and you always have a written record of what was agreed.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact" class="contact">
