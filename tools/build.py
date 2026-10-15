@@ -150,6 +150,27 @@ def build():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(page)
 
+    # Service pages (tools/pages.json + tools/pages/<path>.html)
+    pages = json.loads((ROOT / "tools/pages.json").read_text()) if (ROOT / "tools/pages.json").exists() else []
+    for pg in pages:
+        url = f"{SITE}/{pg['path']}/"
+        ld = {"@context": "https://schema.org", "@type": "Service", "name": pg["service_name"],
+              "url": url, "description": pg["description"], "areaServed": {"@type": "Country", "name": "United States"},
+              "provider": {"@type": "ProfessionalService", "name": "Clearbid Proposal Services", "url": SITE + "/"},
+              "offers": {"@type": "Offer", "price": pg["price"], "priceCurrency": "USD"}}
+        extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n'
+        body = (ROOT / "tools/pages" / f"{pg['path']}.html").read_text().rstrip()
+        page = head(pg["title"], pg["description"], url, "website", extra)
+        page += HEADER.format(blog_current="") + "\n"
+        page += f'''  <p class="crumbs"><a href="/#services">Services</a></p>
+  <article class="page">
+{body}
+  </article>
+''' + FOOTER.format(year=year) + "\n</div>\n</body>\n</html>\n"
+        out = ROOT / pg["path"] / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(page)
+
     # Blog index
     items = "\n".join(f'''      <li>
         <h2><a href="/blog/{p["slug"]}/">{esc(p["title"])}</a></h2>
@@ -197,11 +218,13 @@ def build():
 
     # Sitemap
     newest = posts[0]["u"].isoformat() if posts else dt.date.today().isoformat()
-    static = [("/", None), ("/blog/", newest), ("/terms.html", None), ("/privacy.html", None)]
+    static = [("/", None)] + [(f"/{pg['path']}/", None) for pg in pages] + [("/blog/", newest), ("/terms.html", None), ("/privacy.html", None)]
     urls = []
     for path, lastmod in static:
         if lastmod is None:
             f = "index.html" if path == "/" else path.lstrip("/")
+            if f.endswith("/"):
+                f = "tools/pages/" + f.rstrip("/") + ".html"
             r = subprocess.run(["git", "log", "-1", "--format=%cs", "--", f], cwd=ROOT, capture_output=True, text=True)
             lastmod = r.stdout.strip() or dt.date.today().isoformat()
         urls.append(f"  <url><loc>{SITE}{path}</loc><lastmod>{lastmod}</lastmod></url>")
@@ -210,7 +233,7 @@ def build():
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
                                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                                       + "\n".join(urls) + "\n</urlset>\n")
-    print(f"built {len(posts)} post(s): " + ", ".join(slugs))
+    print(f"built {len(posts)} post(s): " + ", ".join(slugs) + f"; {len(pages)} page(s)")
 
 
 if __name__ == "__main__":
