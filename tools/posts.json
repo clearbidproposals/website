@@ -5,5 +5,26 @@
     "description": "Where federal, state and local bids in Mississippi are posted, how to register for each, and the dollar thresholds that decide whether a job is advertised at all.",
     "date": "2026-10-14",
     "service": "proposal"
+  },
+  {
+    "slug": "capability-statement-what-to-include",
+    "title": "What to Put on a Capability Statement (With a Sample)",
+    "description": "What belongs on a one-page capability statement, section by section, shown with a sample we wrote for a fictional janitorial company and tips from agency guides.",
+    "date": "2026-10-19",
+    "service": "capability"
+  },
+  {
+    "slug": "compliance-matrix-how-to-build",
+    "title": "What a Compliance Matrix Is and How to Build One for Any RFP",
+    "description": "What a compliance matrix is, where requirements hide in federal and Mississippi bids, and how to build one step by step and use it to check your bid before you submit.",
+    "date": "2026-10-19",
+    "service": "review"
+  },
+  {
+    "slug": "why-bids-get-rejected",
+    "title": "Why Bids Get Rejected and How to Avoid the Most Common Mistakes",
+    "description": "Late bids, missed amendments, bid bond errors, missing signatures, SAM and licensing gaps, page limits: why bids get thrown out under federal and Mississippi rules.",
+    "date": "2026-10-19",
+    "service": "review"
   }
 ]

@@ -47,7 +47,7 @@ SERVICES = {
                    "We write one-page capability statements for small contractors, plus rewritten SBA profile text, for $300 in 3 business days.",
                    "https://buy.stripe.com/8x26oG2UCaQU0Xj7Ll7ok00", "Order a capability statement"),
     "review": ("Want a second set of eyes before you submit?",
-               "Our $250 bid review checks your draft against every requirement in the solicitation and lists what is missing, in 2 business days.",
+               "Our $250 bid review checks your draft against every requirement in the solicitation and lists what is missing, in 2 business days. If your bid is due sooner than that, send us the date before you order.",
                "https://buy.stripe.com/eVq7sK66Oe36eO93v57ok01", "Order a bid review"),
     "proposal": ("Have a bid due?",
                  "Send us the solicitation and your deadline. We write complete, compliance-checked proposals at a fixed price, usually in 5 business days.",
