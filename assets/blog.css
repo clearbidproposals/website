@@ -37,6 +37,7 @@ article ul,article ol{margin:0 0 16px;padding-left:1.3em}
 article li{margin-bottom:8px}
 .tbl{overflow-x:auto;margin:6px 0 18px}
 table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+.tbl table{min-width:560px}
 th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
 th{font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .note{background:var(--accent-soft);border-radius:6px;padding:14px 16px;margin:20px 0;font-size:.95rem}
