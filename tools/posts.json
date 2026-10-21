@@ -26,5 +26,12 @@
     "description": "Late bids, missed amendments, bid bond errors, missing signatures, SAM and licensing gaps, page limits: why bids get thrown out under federal and Mississippi rules.",
     "date": "2026-10-19",
     "service": "review"
+  },
+  {
+    "slug": "sam-gov-registration-step-by-step",
+    "title": "SAM.gov Registration, Step by Step, for Small Contractors",
+    "description": "What to gather, the order of the screens, how long it takes to go active and where registrations get stuck. A plain guide to SAM.gov for small contractors.",
+    "date": "2026-10-21",
+    "service": "capability"
   }
 ]
